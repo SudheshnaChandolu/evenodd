@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Percentage</title>        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+         body {
+            margin: 0;
+            background-image: url("lib2.jpg");
+            height: 597px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+            .back{
+                width: 500px;
+                height: 400px; 
+                margin-left: 300px;
+                background-color: black;
+                margin-top: 100px;
+            }
+    </style>
+    <body>
+       
+        <div class="container text-center">
+            <div class="jumbotron back">
+                <p class="text-center" style="font-size: 25px; color: white;"><b>Check your Grade</b></p>
+                <div class="form-group">                
+                    <form onsubmit="return grade()">                        
+                        <input type="text" id="mat" class="form-control" placeholder="Enter your Math mark" max="100" min="0" required>
+                        <input type="text" id="engli" class="form-control mt-3" placeholder="Enter your English mark" max="100" min="0" required>
+                        <input type="text" id="sci" class="form-control mt-3" placeholder="Enter your Science mark" max="100" min="0" required>
+                        <button type="submit" class="btn btn-info mt-4" >Check</button>
+                        <div class="text-center mt-4" style="font-family: 'Courier New', Courier, monospace; font-weight: bolder; color: white;">
+                            <p id="result"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./percentage.js">
+            
+        </script>
+    </body>
+</html>
